@@ -1,6 +1,6 @@
 # Linux Performance and Tuning Guidelines的中文翻译
 
-首先，这本书的大多数翻译不是我翻译的，其次，最初的想法将别人的网页上的翻译转换成markdown格式，最后，在尝试一下gitbook这个DRM-free的电子书生成工具。以下是一些介绍: 
+首先，这本书的大多数翻译不是我翻译的(虽然还没翻译全)，其次，最初的想法将别人的网页上的翻译转换成markdown格式，最后，在尝试一下gitbook这个DRM-free的电子书生成工具。以下是一些介绍: 
 
 > 备注： 以下均在Linux环境中操作。
 
