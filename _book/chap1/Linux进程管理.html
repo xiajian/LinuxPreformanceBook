@@ -1,0 +1,760 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <title>Linux进程管理 | </title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.5.0">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+        
+    
+    
+    <link rel="next" href="../chap1/Linux内存结构.html" />
+    
+    
+    <link rel="prev" href="../chap1/README.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../gitbook/style.css">
+
+
+        
+    <div class="book" data-level="2.1" data-basepath=".." data-revision="1424917814231">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="preface.html">
+            
+                
+                    <a href="../preface.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         前言
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="chap1/README.html">
+            
+                
+                    <a href="../chap1/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         了解Linux操作系统
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter active" data-level="2.1" data-path="chap1/Linux进程管理.html">
+            
+                
+                    <a href="../chap1/Linux进程管理.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                         Linux进程管理
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.2" data-path="chap1/Linux内存结构.html">
+            
+                
+                    <a href="../chap1/Linux内存结构.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                         Linux内存结构
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.3" data-path="chap1/Linux文件系统.html">
+            
+                
+                    <a href="../chap1/Linux文件系统.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                         Linux文件系统
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.4" data-path="chap1/io子系统.html">
+            
+                
+                    <a href="../chap1/io子系统.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                         硬盘I/O子系统
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.5" data-path="chap1/网络子系统.html">
+            
+                
+                    <a href="../chap1/网络子系统.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                         网络子系统
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.6" data-path="chap1/性能指标.html">
+            
+                
+                    <a href="../chap1/性能指标.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                         了解Linux性能指标
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="chap2/README.html">
+            
+                
+                    <a href="../chap2/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         监控和测量工具
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="3.1" data-path="chap2/介绍.html">
+            
+                
+                    <a href="../chap2/介绍.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                         介绍
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.2" data-path="chap2/工具功能简介.html">
+            
+                
+                    <a href="../chap2/工具功能简介.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                         工具功能简介
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.3" data-path="chap2/监控工具.html">
+            
+                
+                    <a href="../chap2/监控工具.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                         监控工具
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.4" data-path="chap2/基准工具.html">
+            
+                
+                    <a href="../chap2/基准工具.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                         基准工具
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" data-path="chap3/README.html">
+            
+                
+                    <a href="../chap3/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         分析性能瓶颈
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="4.1" data-path="chap3/确认瓶颈.html">
+            
+                
+                    <a href="../chap3/确认瓶颈.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                         确认瓶颈
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.2" data-path="chap3/CPU瓶颈.html">
+            
+                
+                    <a href="../chap3/CPU瓶颈.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                         CPU瓶颈
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.3" data-path="chap3/内存瓶颈.html">
+            
+                
+                    <a href="../chap3/内存瓶颈.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                         内存瓶颈
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.4" data-path="chap3/硬盘瓶颈.html">
+            
+                
+                    <a href="../chap3/硬盘瓶颈.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                         硬盘瓶颈
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.5" data-path="chap3/网络瓶颈.html">
+            
+                
+                    <a href="../chap3/网络瓶颈.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                         网络瓶颈
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" data-path="chap4/README.html">
+            
+                
+                    <a href="../chap4/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         操作系统调优
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="5.1" data-path="chap4/调优原则.html">
+            
+                
+                    <a href="../chap4/调优原则.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                         调优原则
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.2" data-path="chap4/安装注意事项.html">
+            
+                
+                    <a href="../chap4/安装注意事项.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                         安装注意事项
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.3" data-path="chap4/更改内核参数.html">
+            
+                
+                    <a href="../chap4/更改内核参数.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                         更改内核参数
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.4" data-path="chap4/处理器子系统调优.html">
+            
+                
+                    <a href="../chap4/处理器子系统调优.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                         处理器子系统调优
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.5" data-path="chap4/虚拟内存子系统调优.html">
+            
+                
+                    <a href="../chap4/虚拟内存子系统调优.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                         虚拟内存子系统调优
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.6" data-path="chap4/硬盘子系统调优.html">
+            
+                
+                    <a href="../chap4/硬盘子系统调优.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                         硬盘子系统调优
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.7" data-path="chap4/网络子系统调优.html">
+            
+                
+                    <a href="../chap4/网络子系统调优.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                         网络子系统调优
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" ></a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_8">
+                    
+                        <h1 id="11-linux">1.1 Linux进程管理(原创翻译)</h1>
+<p>翻译：飞哥 (<a href="http://hi.baidu.com/imlidapeng" target="_blank">http://hi.baidu.com/imlidapeng</a>)</p>
+<p>版权所有，尊重他人劳动成果，转载时请注明作者和原始出处及本声明。</p>
+<p>原文名称：<a href="http://www.redbooks.ibm.com/abstracts/redp4285.html" target="_blank">《Linux Performance and Tuning Guidelines》</a></p>
+<hr>
+<p>1.1.1 进程是什么？<br>1.1.2 进程生命周期<br>1.1.3 线程<br>1.1.4 进程优先级和Nice值<br>1.1.5 上下文交换<br>1.1.6 中断处理<br>1.1.7 进程状态<br>1.1.8 进程内存段<br>1.1.9 CPU调度器  </p>
+<hr>
+<p>进程管理对于任何一个操作系统来说都是最重要的任务之一。高效的进程管理能保证应用平稳有效的运行。</p>
+<p>Linux的进程管理与UNIX十分相似。它包括进程调度、中断处理、信号发送、进程优先级、进程切换、进程状态、进程内存等。</p>
+<p>在本章节中，我将讨论Linux进程管理的原理。它能帮助你更好的了解Linux内核是怎样管理进程来影响系统性能的。</p>
+<h2 id="111-">1.1.1 进程是什么？</h2>
+<p>进程就是执行程序运行在处理器上的一个实例。进程可以使用Linux内核所能控制的任何资源来完成它的任务。</p>
+<p>所有运行在Linux操作系统上的进程都使用一个名叫task_struct的结构来管理，这个结构亦被称作进程描述符(Process Descriptor)。进程描述符包括进程运行的所有信息如进程ID、进程属性和构建这个进程所需要的资源。如果你清楚进程的结构，就能了解到什么对于进程执行和效能来说是重要的。图1-2展现了进程结构的概要。</p>
+<p>图 1-2 task_struct结构</p>
+<h2 id="112-">1.1.2 进程生命周期</h2>
+<p>每个进程都有自己的生命周期如创建、执行、结束和消除。这些阶段在系统启动运行中会被重复无数次。因此从性能角度来看进程生命周期是极其重要的。</p>
+<p>图1-3展示进程典型的生命周期</p>
+<p>图1-3进程典型的生命周期</p>
+<p>当进程创建一个新的进程，创建进程（父进程）发出fork()系统调用。当一个fork()系统调用被发出，它将得到一个关于新进程（子进程）的进程描述符并设置一个新的进程ID。它会将父进程的进程描述符中所有数据复制到子进程。此时父进程的整个地址空间并没有被复制的，所以父子进程会共享相同的地址空间。</p>
+<p>exec()系统调用会复制一个新的程序到子进程的地址空间。因为父子进程共享相同的地址空间，所以当新程序写入数据时会导致分页错误(page fault)的例外发生。这时候内核会分配给子进程一个新的物理分页。</p>
+<p>这个推迟的操作被叫做写时复制(Copy On Write)。子进程通常是执行自己的程序，与其父进程所执行的有所不同。这样的操作可以避免没有必要的系统开销，因为复制整个地址空间是一个非常慢而且效率低的操作，它会消耗很多处理器时间和资源。</p>
+<p>当程序执行完成时，子进程调用exit()系统调用结束。系统调用exit()会释放进程的大部分数据结构并发送信号通知父进程。此时子进程被称作僵尸进程(zombie process)。</p>
+<p>在子进程使用wait()系统调用让父进程知道其已经结束之前，子进程是不会被清除的。当父进程得到子进程结束的通知后，会立即清除子进程的所有数据结构并释放进程描述符。</p>
+<h2 id="113-">1.1.3 线程</h2>
+<p>线程是由一个单独进程产生的执行单元。它与同一进程中的其他线程并行运行。它们能共享同一资源如内存、地址空间、打开的文件等。它们能访问同样一组应用数据。线程也被称作轻量级进程（Light Weight Process LWP）。因为它们共享资源，线程不可以在同一时间修改它们共享的资源。互斥的实现、锁、序列化等是用户应用的职责。</p>
+<p>从性能角度来说，创建线程要比创建进程的开销小，因为线程在创建时不需要复制资源。另一方面，进程和线程在调度算法方面上有很多相似的特性。内核在处理它们时都使用类似的方法。</p>
+<p>图1-4 进程和线程</p>
+<p>在目前Linux的实现中，线程支持可移植操作系统接口（POSIX）。在Linux操作系统中有几种线程的实现。下面列举几种最常使用的线程实现。</p>
+<ul>
+<li>LinuxThreads</li>
+</ul>
+<p>LinuxThreads自从Linux内核2.0就被作为默认的线程实现。但LinuxThread有许多实现与POSIX标准不兼容。Native POSIX Thread Library（NPTL）正在取代LinuxThreads。在未来的Linux企业发行版中将不在支持LinuxThreads。</p>
+<ul>
+<li>Native POSIX Thread Libray（NPTL）本地POSIX线程库</li>
+</ul>
+<p>NPTL最初是由Red Hat开发。NPTL与POSIX标准更加兼容。利用2.6内核增强特性如新的系统调用clone()、信号处理实现等，它可以提供较LinuxThreads更好的性能和伸缩性。</p>
+<p>NPTL与LinuxThreads有很多的不兼容之处。一个应用如果依赖于LinuxThreads，可能在NPTL实现中无法工作。</p>
+<ul>
+<li>Next Generation POSIX Thread（NGPT）下一代POSIX线程</li>
+</ul>
+<p>NGPT是IBM开发的POSIX线程库的版本。目前处于维护阶段，未来也没有开发计划。</p>
+<p>使用LD_ASSUME_KERNEL环境变量，你可以设定应用使用哪个线程库。</p>
+<h2 id="114-nice">1.1.4 进程优先级和Nice值</h2>
+<p>进程优先级(Process priority) 是一个数值，用来让CPU根据动态优先级和静态优先级来决定进程执行的顺序。一个高优先级的进程可以获得更多在处理器上运行的机会。</p>
+<p>内核会根据进程的行为和特性使用试探算法(Heuristic Algorithm)来动态调高和调低动态优先级。用户进程可以通过进程Nice的值间接改变静态优先级。静态优先级高的进程可以获得较长的时间片【Time Slice】（进程能运行在处理器有多长时间）。</p>
+<p>Linux中Nice值范围为19（最低优先级）到-20（最高优先级），默认值为0。要将Nice值更改为负数，必须通过登录或使用su命令由root执行。</p>
+<h2 id="115-context-switching">1.1.5 上下文交换(Context switching)</h2>
+<p>在进程执行过程中，进程信息存储在处理器的寄存器和缓存中。这组为执行中进程而载入寄存器的数据被称作上下文(Context)。为切换进程，当前执行中进程的上下文会被暂存，下一个执行进程的上下文会被还原到寄存器，进程描述符和内核模式堆栈【Kernel mode stack】的区块会被用来存储上下文，这个交换过程被叫做上下文交换【Context Switching】。发生过多的上下文交换是不好的，因为处理器每次都要刷新寄存器和缓存为新进程让出资源，这会导致性能上的问题。</p>
+<p>图1-5 说明了上下文交换是怎样工作的。</p>
+<p>图1-5 上下文交换</p>
+<h2 id="116-">1.1.6 中断处理</h2>
+<p>中断处理是优先级最高的任务之一。中断通常是由I/O设备产生的如网卡、键盘、硬盘控制器、串行适配器等。中断控制会向内核发送一个事件通知（如键盘输入、以太帧到达等），它指示内核中断执行中的进程并尽快处理中断，因为大多数设备需要快速的回应，这对系统性能是很关键的。当一个中断信号到达内核时，内核必须切换当前执行的进程到处理中断的新进程，这意味着中断会触发上下文交换，因此大量的中断可以导致系统性能的下降。</p>
+<p>在Linux中，有两种类型的中断。一种为硬中断(Hard Interrupt)，是由需要回应的设备产生的（硬盘I/O中断、网络适配器中断，键盘中断，鼠标中断）。另一种为软中断【Soft Interrupt】，用于可以延后执行的任务（TCP/IP操作，SCSI协议操作等）。你可以在/proc/interrupts中查看到有关硬中断的信息。</p>
+<p>在多处理器环境下，每个处理器都可以用来处理中断。将中断绑定到某一个物理处理可以提升系统的性能。要了解更详细的内容，请参考4.4.2“关于中断处理的CPU亲和力(CPU Affinity)”。</p>
+<h2 id="117-">1.1.7 进程状态</h2>
+<p>每个进程都有它自己的状态，来显示进程当前的情况。在进程执行过程中其状态会发生变化。可能状态有如下几种：</p>
+<ul>
+<li>TASK_RUNNING(运行中) : 此状态表示进程正运行在CPU上或在队列中等待运行（运行队列(Run Queue)）。</li>
+<li>TASK_STOPPED(停止) : 当进程接收到某些信号（例如SIGINT、SIGSTOP）后被暂停就处于此种状态，该等待的进程在收到恢复信号如SIGCONT后会重新投入运行。</li>
+<li>TASK_INTERRUPTIBLE(可中断) : 在这种状态下，进程被暂停运行，等待某些状态的达成。如果一个处于可中断状态的进程收到停止的信号，将变更进程的状态并中断操作。可中断状态进程的一个典型例子就是等待键盘的输入。</li>
+<li>TASK_UNINTERRUPTIBLE(不可中断) : 此状态基本上与可中断状态十分相似。但可中断状态进程可以被中断，而向一个不可中断进程发送信号却不会有任何反应。不可中断状态进程的一个典型例子就是等待硬盘I/O操作。</li>
+<li>TASK_ZOMBIE(僵尸) : 在进程使用系统调用exit()退出后，其父进程就会知道。僵尸状态的进程会等待父进程通知其释放所有的数据结构。</li>
+</ul>
+<p>图1-6 进程状态</p>
+<h3 id="">僵尸进程</h3>
+<p>当一个进程收到信号并已经终止，它通常需要一些时间来完成结束前的所有任务（如关闭打开的文件）。在这个通常很短的时间里，该进程就是一个僵尸（Zombie）。</p>
+<p>当进程完成所有的关闭任务后，它会向父进程报告其即将终止。但有时僵尸进程并不能将自己终止，在这种情况状态会显示为Z（Zombie）。</p>
+<p>使用kill命令是不可能结束这样一个进程的，因为这个进程被认为已经死掉了。如果你不能清除僵尸，你可以结束其父进程，这样僵尸也会随之消失。然而如果父进程是init进程，你就不可以结束它，因为init进程是一个极为重要的进程。因此你可能需要重新启动系统来清除这个僵尸进程。</p>
+<h2 id="118-">1.1.8 进程内存段</h2>
+<p>一个进程需要使用自己的内存区域来执行工作。工作的变化随情况和进程用法而定。一个进程可以有不同的工作负载特性和不同的数据大小的需求，进程需要处理数据的大小多种多样。为了满足这样的需求，Linux内核使用动态内存分配机制。进程内存分配结构如图1-7。</p>
+<p>图1-7 进程地址空间</p>
+<p>进程的内存区有几部分组成</p>
+<ul>
+<li>文字段 : 用来存储执行代码。</li>
+<li>数据段 数据段由三块区域组成。<ul>
+<li>数据(Data)：存储已初始化数据如静态变量。</li>
+<li>BSS ：存储零初始化的数据，数据被初始化为零。</li>
+<li>堆(Heap)：这块区域由malloc()用来按需要分配动态内存。堆向高地址扩张。</li>
+</ul>
+</li>
+<li>堆栈段 : 用来存储本地变量、函数参数、函数返回地址。堆栈段向低地址扩张。</li>
+</ul>
+<p>使用pmap命令可以显示用户进程地址空间的内存分配。你可以使用ps命令显示此内存段的大小。参考2.3.10“pmap”和2.3.4“ps和pstree”。</p>
+<h2 id="119-linux-cpu">1.1.9 Linux CPU调度器</h2>
+<p>计算机的基本功能非常简单就是计算。为了计算，这就意味要管理计算资源或处理器和计算任务（被称作线程或进程）。Linux内核使用与过去CPU调度器使用的算法O(n)截然不同的O(1)算法,这要感谢Lngo Molnar的巨大贡献。O(1)指的是一种静态算法，意思就是不管进程的数量有多少，进程的执行时间都是不变的。</p>
+<p>这种新的调度器的扩展性非常好，不管进程的数量或处理器的数量有多少，系统的开销都是非常小的。此算法中使用到两个进程优先级数组：</p>
+<ul>
+<li>活动的(Active)</li>
+<li>过期的(Expired)</li>
+</ul>
+<p>调度器根据进程的优先级和优先拦截率(Prior Blocking Rate)分配时间片，然后它们被以优先级顺序置于活动数组【Active Array】中。当时间片耗尽，它们会被分配一个新的时间片并置于过期数组中。当活动数组中所有进程的时间片都全部耗尽，两个数组会被互换并重新执行。对于交互进程（相对于实时进程），拥有长时间片的高优先级进程可以得到比低优先级进程更多的时间，但这并不意味着低优先级的进程会被置之不理。在企业环境中，拥有很多的处理器并经常出现大量的线程和进程，这样做可以大大提升Linux内核的伸缩性。新的O(1)CPU调度器被设计用于2.6内核，但已被移植到2.4内核家族。图1-8说明了Linux CPU调度器是怎样工作的。</p>
+<p>图1-8 Linux 2.6内核 O(1)调度器</p>
+<p>新调度器另一个大的改进就是支持非一致性内存架构（NUMA）和对称多线程处理器，如Intel超线程技术。</p>
+<p>改良后的NUMA支持确保只有当某个节点过载时，负载平衡才会跨越NUMA节点。This mechanism ensures that traffic over the comparatively slow scalability links in a NUMA system are minimized。尽管在每个调度节拍(tick)时负载平衡会遍历调度域群组【Scheduler Domain Group】中的处理器，但只有在节点过载并请求负载平衡时，负载才会跨越调度域【Scheduler Domain】转移。</p>
+<p>图1-9 O(1) CPU调度器结构</p>
+<p>译者注：在翻译过程中，深深的感觉到进程调度是一项非常复杂的工作。如果想深入了解2.6内核进程调度还需要多多查看相关资料，下面是一些关于2.6内核进程调度的文章，有兴趣的朋友不妨看看。</p>
+<ul>
+<li>Linux 2.6 调度系统分析：<a href="http://www.ibm.com/developerworks/cn/linux/kernel/l-kn26sch/index.html" target="_blank">http://www.ibm.com/developerworks/cn/linux/kernel/l-kn26sch/index.html</a></li>
+<li>Linux 的 NUMA 技术：<a href="http://www.ibm.com/developerworks/cn/linux/l-numa/index.html" target="_blank">http://www.ibm.com/developerworks/cn/linux/l-numa/index.html</a></li>
+<li>Linux Scheduling Domains：<a href="http://www.ibm.com/developerworks/cn/linux/l-cn-schldom/index.html" target="_blank">http://www.ibm.com/developerworks/cn/linux/l-cn-schldom/index.html</a></li>
+<li>Inside the Linux scheduler：<a href="http://www.ibm.com/developerworks/linux/library/l-scheduler/" target="_blank">http://www.ibm.com/developerworks/linux/library/l-scheduler/</a></li>
+</ul>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../chap1/README.html" class="navigation navigation-prev " aria-label="Previous page: 了解Linux操作系统"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../chap1/Linux内存结构.html" class="navigation navigation-next " aria-label="Next page: Linux内存结构"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

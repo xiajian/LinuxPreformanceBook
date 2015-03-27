@@ -1,0 +1,752 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <title>内存瓶颈 | </title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.5.0">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+        
+    
+    
+    <link rel="next" href="../chap3/硬盘瓶颈.html" />
+    
+    
+    <link rel="prev" href="../chap3/CPU瓶颈.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../gitbook/style.css">
+
+
+        
+    <div class="book" data-level="4.3" data-basepath=".." data-revision="1424917814231">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="preface.html">
+            
+                
+                    <a href="../preface.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         前言
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="chap1/README.html">
+            
+                
+                    <a href="../chap1/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         了解Linux操作系统
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="2.1" data-path="chap1/Linux进程管理.html">
+            
+                
+                    <a href="../chap1/Linux进程管理.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                         Linux进程管理
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.2" data-path="chap1/Linux内存结构.html">
+            
+                
+                    <a href="../chap1/Linux内存结构.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                         Linux内存结构
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.3" data-path="chap1/Linux文件系统.html">
+            
+                
+                    <a href="../chap1/Linux文件系统.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                         Linux文件系统
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.4" data-path="chap1/io子系统.html">
+            
+                
+                    <a href="../chap1/io子系统.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                         硬盘I/O子系统
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.5" data-path="chap1/网络子系统.html">
+            
+                
+                    <a href="../chap1/网络子系统.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                         网络子系统
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.6" data-path="chap1/性能指标.html">
+            
+                
+                    <a href="../chap1/性能指标.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                         了解Linux性能指标
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="chap2/README.html">
+            
+                
+                    <a href="../chap2/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         监控和测量工具
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="3.1" data-path="chap2/介绍.html">
+            
+                
+                    <a href="../chap2/介绍.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                         介绍
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.2" data-path="chap2/工具功能简介.html">
+            
+                
+                    <a href="../chap2/工具功能简介.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                         工具功能简介
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.3" data-path="chap2/监控工具.html">
+            
+                
+                    <a href="../chap2/监控工具.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                         监控工具
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.4" data-path="chap2/基准工具.html">
+            
+                
+                    <a href="../chap2/基准工具.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                         基准工具
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" data-path="chap3/README.html">
+            
+                
+                    <a href="../chap3/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         分析性能瓶颈
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="4.1" data-path="chap3/确认瓶颈.html">
+            
+                
+                    <a href="../chap3/确认瓶颈.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                         确认瓶颈
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.2" data-path="chap3/CPU瓶颈.html">
+            
+                
+                    <a href="../chap3/CPU瓶颈.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                         CPU瓶颈
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="4.3" data-path="chap3/内存瓶颈.html">
+            
+                
+                    <a href="../chap3/内存瓶颈.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                         内存瓶颈
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.4" data-path="chap3/硬盘瓶颈.html">
+            
+                
+                    <a href="../chap3/硬盘瓶颈.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                         硬盘瓶颈
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.5" data-path="chap3/网络瓶颈.html">
+            
+                
+                    <a href="../chap3/网络瓶颈.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                         网络瓶颈
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" data-path="chap4/README.html">
+            
+                
+                    <a href="../chap4/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         操作系统调优
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="5.1" data-path="chap4/调优原则.html">
+            
+                
+                    <a href="../chap4/调优原则.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                         调优原则
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.2" data-path="chap4/安装注意事项.html">
+            
+                
+                    <a href="../chap4/安装注意事项.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                         安装注意事项
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.3" data-path="chap4/更改内核参数.html">
+            
+                
+                    <a href="../chap4/更改内核参数.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                         更改内核参数
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.4" data-path="chap4/处理器子系统调优.html">
+            
+                
+                    <a href="../chap4/处理器子系统调优.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                         处理器子系统调优
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.5" data-path="chap4/虚拟内存子系统调优.html">
+            
+                
+                    <a href="../chap4/虚拟内存子系统调优.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                         虚拟内存子系统调优
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.6" data-path="chap4/硬盘子系统调优.html">
+            
+                
+                    <a href="../chap4/硬盘子系统调优.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                         硬盘子系统调优
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.7" data-path="chap4/网络子系统调优.html">
+            
+                
+                    <a href="../chap4/网络子系统调优.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                         网络子系统调优
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" ></a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_38">
+                    
+                        <h1 id="33-">3.3 内存瓶颈</h1>
+<p>On a Linux system, many programs run at the same time. 
+These programs support multiple users, and some processes are more used than others. 
+Some of these programs use a portion of memory while the rest are “sleeping.” 
+When an application accesses cache, the performance increases because an in-memory access retrieves data, 
+thereby eliminating the need to access slower disks.</p>
+<p>在linux系统中，在同一时间内，存在支持多个用户的多个进程在运行，它们对内存使用有多有少；
+应该程序访问内存数据的效率要比磁盘高；</p>
+<p>The OS uses an algorithm to control which programs will use physical memory and which are paged out. 
+This is transparent to user programs. Page space is a file created by the OS on a disk partition 
+to store user programs that are not currently in use. Typically, page sizes are 4 KB or 8 KB. 
+In Linux, the page size is defined by using the variable EXEC_PAGESIZE in the include/asm-<architecture>/param.h 
+kernel header file. The process used to page a process out to disk is called pageout.</p>
+<p>操作系统使用一定的策略来决定哪些程序将使用物理内存，哪些程序将被从内存页面中替出；
+这些操作对用户程序来说是透明的；
+页面空间是由操作系统在磁盘划分上创建的文件，用来存储当前未在使用的用户程序；
+通常，页面大小为 4KB 或 8KB; 
+在Linux系统中，页面大小由内核的头文件:
+include/asm-<architecture>/param.h 
+中的宏 EXEC_PAGESIZE 来定义；
+进程使用的页面被替换到磁盘称为换页 或 页面溢出；</p>
+<h2 id="331-finding-memory-bottlenecks">3.3.1 寻找内存瓶颈(Finding memory bottlenecks)</h2>
+<p>文章的这部分使用了KDE的一个工具KDE System Guard来做内存检测；</p>
+<p>KDE，K桌面环境(Kool Desktop Environment)的缩写。
+一种著名的运行于 Linux、Unix 以及FreeBSD 等操作系统上面自由图形工作环境，
+整个系统采用的都是 TrollTech 公司所开发的Qt程序库（现在属于Digia公司）。
+KDE 和 Gnome 都是 Linux 操作系统上最流行的桌面环境系统。</p>
+<p>Start your analysis by listing the applications that are running on the server. 
+Determine how much physical memory and swap each application needs to run. 
+Figure 3-1 on page 83 shows KDE System Guard monitoring memory usage.</p>
+<p>图 3.1 KDE System Guard内存监测</p>
+<p>The indicators in Table 3-1 can also help you define a problem with memory.</p>
+<p>表3-1 </p>
+<p>Paging and swapping indicators
+换页和交换的意义
+In Linux, as with all UNIX-based operating systems, there are differences between paging and swapping. 
+Paging moves individual pages to swap space on the disk; 
+swapping is a bigger operation that moves the entire address space of a process to swap space in one operation.
+在Linux系统中，分布和交换是不同的；
+换页是将独立的页面移到磁盘的交换空间；
+交换是更大的操作，它将整个进程的地址空间一次性移到磁盘的交换空间；</p>
+<p>Swapping can have one of two causes:
+导致交换的原因有两个</p>
+<ul>
+<li>A process enters sleep mode. 
+进程进入 sleep 模式
+This usually happens because the process depends on interactive action and editors, shells, 
+and data entry applications spend most of their time waiting for user input. During this time, 
+they are inactive.
+这种情况通常是因为进程需要和编辑器，shell等交互，以及应用程序需要等待用户的数据输入；
+在这是，它是非活动的；</li>
+</ul>
+<ul>
+<li>A process behaves poorly. 
+进程的异常行为
+Paging can be a serious performance problem when the amount of free memory pages falls 
+below the minimum amount specified, because the paging mechanism is not able to handle 
+the requests for physical memory pages and the swap mechanism is called to free more pages. 
+This significantly increases I/O to disk and will quickly degrade a server’s performance.
+当空闲内存页面过小时，换页会导致严重的性能问题，
+因为换页机制不能处理物理内存页面的请求，而交换机制将会调用更多的空闲内存页面。
+这会急剧增加磁盘的I/O, 并快速地拉低服务器的性能</li>
+</ul>
+<p>If your server is always paging to disk (a high page-out rate), consider adding more memory.
+However, for systems with a low page-out rate, it might not affect performance.
+如果服务器总是在换页(一个很高的换页率)，就需要考虑增加内存；
+当然，系统换页率低时，它不会影响性能；</p>
+<h2 id="332-performance-tuning-options">3.3.2 性能调整选项(Performance tuning options)</h2>
+<p>It you believe there is a memory bottleneck, 
+consider performing one or more of these actions:
+如果你确认是内存的瓶颈，可以考虑用下面的办法来解决</p>
+<ul>
+<li><p>Tune the swap space using bigpages, hugetlb, shared memory.
+调整交换空间，使用大页面，大块内存，共享内存</p>
+</li>
+<li><p>Increase or decrease the size of pages.
+增加或降低页面的大小；</p>
+</li>
+<li><p>Improve the handling of active and inactive memory.
+改进对活动和非活动内存的处理；</p>
+</li>
+<li><p>Adjust the page-out rate.
+调整换页率；</p>
+</li>
+<li><p>Limit the resources used for each user on the server.
+限制服务器上每个用户的可用资源；</p>
+</li>
+<li><p>Stop the services that are not needed, as discussed in “Daemons” on page 97.
+停掉不需要的服务</p>
+</li>
+<li><p>Add memory.
+增加内存；</p>
+</li>
+</ul>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../chap3/CPU瓶颈.html" class="navigation navigation-prev " aria-label="Previous page: CPU瓶颈"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../chap3/硬盘瓶颈.html" class="navigation navigation-next " aria-label="Next page: 硬盘瓶颈"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

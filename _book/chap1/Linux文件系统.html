@@ -1,0 +1,721 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <title>Linux文件系统 | </title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.5.0">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+        
+    
+    
+    <link rel="next" href="../chap1/io子系统.html" />
+    
+    
+    <link rel="prev" href="../chap1/Linux内存结构.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../gitbook/style.css">
+
+
+        
+    <div class="book" data-level="2.3" data-basepath=".." data-revision="1424917814231">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="preface.html">
+            
+                
+                    <a href="../preface.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         前言
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="chap1/README.html">
+            
+                
+                    <a href="../chap1/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         了解Linux操作系统
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="2.1" data-path="chap1/Linux进程管理.html">
+            
+                
+                    <a href="../chap1/Linux进程管理.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                         Linux进程管理
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.2" data-path="chap1/Linux内存结构.html">
+            
+                
+                    <a href="../chap1/Linux内存结构.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                         Linux内存结构
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="2.3" data-path="chap1/Linux文件系统.html">
+            
+                
+                    <a href="../chap1/Linux文件系统.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                         Linux文件系统
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.4" data-path="chap1/io子系统.html">
+            
+                
+                    <a href="../chap1/io子系统.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                         硬盘I/O子系统
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.5" data-path="chap1/网络子系统.html">
+            
+                
+                    <a href="../chap1/网络子系统.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                         网络子系统
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.6" data-path="chap1/性能指标.html">
+            
+                
+                    <a href="../chap1/性能指标.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                         了解Linux性能指标
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="chap2/README.html">
+            
+                
+                    <a href="../chap2/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         监控和测量工具
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="3.1" data-path="chap2/介绍.html">
+            
+                
+                    <a href="../chap2/介绍.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                         介绍
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.2" data-path="chap2/工具功能简介.html">
+            
+                
+                    <a href="../chap2/工具功能简介.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                         工具功能简介
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.3" data-path="chap2/监控工具.html">
+            
+                
+                    <a href="../chap2/监控工具.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                         监控工具
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.4" data-path="chap2/基准工具.html">
+            
+                
+                    <a href="../chap2/基准工具.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                         基准工具
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" data-path="chap3/README.html">
+            
+                
+                    <a href="../chap3/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         分析性能瓶颈
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="4.1" data-path="chap3/确认瓶颈.html">
+            
+                
+                    <a href="../chap3/确认瓶颈.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                         确认瓶颈
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.2" data-path="chap3/CPU瓶颈.html">
+            
+                
+                    <a href="../chap3/CPU瓶颈.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                         CPU瓶颈
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.3" data-path="chap3/内存瓶颈.html">
+            
+                
+                    <a href="../chap3/内存瓶颈.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                         内存瓶颈
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.4" data-path="chap3/硬盘瓶颈.html">
+            
+                
+                    <a href="../chap3/硬盘瓶颈.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                         硬盘瓶颈
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.5" data-path="chap3/网络瓶颈.html">
+            
+                
+                    <a href="../chap3/网络瓶颈.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                         网络瓶颈
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" data-path="chap4/README.html">
+            
+                
+                    <a href="../chap4/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         操作系统调优
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="5.1" data-path="chap4/调优原则.html">
+            
+                
+                    <a href="../chap4/调优原则.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                         调优原则
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.2" data-path="chap4/安装注意事项.html">
+            
+                
+                    <a href="../chap4/安装注意事项.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                         安装注意事项
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.3" data-path="chap4/更改内核参数.html">
+            
+                
+                    <a href="../chap4/更改内核参数.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                         更改内核参数
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.4" data-path="chap4/处理器子系统调优.html">
+            
+                
+                    <a href="../chap4/处理器子系统调优.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                         处理器子系统调优
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.5" data-path="chap4/虚拟内存子系统调优.html">
+            
+                
+                    <a href="../chap4/虚拟内存子系统调优.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                         虚拟内存子系统调优
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.6" data-path="chap4/硬盘子系统调优.html">
+            
+                
+                    <a href="../chap4/硬盘子系统调优.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                         硬盘子系统调优
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.7" data-path="chap4/网络子系统调优.html">
+            
+                
+                    <a href="../chap4/网络子系统调优.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                         网络子系统调优
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" ></a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_5">
+                    
+                        <h1 id="13-linux">1.3 Linux文件系统</h1>
+<p>翻译：飞哥 (<a href="http://hi.baidu.com/imlidapeng" target="_blank">http://hi.baidu.com/imlidapeng</a>)</p>
+<p>版权所有，尊重他人劳动成果，转载时请注明作者和原始出处及本声明。</p>
+<p>原文名称：<a href="http://www.redbooks.ibm.com/abstracts/redp4285.html" target="_blank">《Linux Performance and Tuning Guidelines》</a></p>
+<hr>
+<p>1.3.1 虚拟文件系统
+1.3.2 日志记录
+1.3.3 Ext2
+1.3.4 Ext3
+1.3.5 ReiserFS
+1.3.6 日志文件系统
+1.3.7 XFS</p>
+<hr>
+<p>Linux作为开源操作系统其中最大的优势就是支援多种文件系统。现代Linux内核几乎支援计算机系统中所有文件系统，从基本的FAT到高性能文件系统如日志文件系统(Journaling File System)(JFS)。由于Ext2、Ext3和ReiserFS为大多数Linux发行版的原生文件系统（ReiserFS只有使用在Novell SUSE Linux上才能获得商业支持），所以我们只集中讲解这些文件系统的相关特性，至于其它文件系统只会略作说明。</p>
+<p>关于文件系统和硬盘子系统，参见4.6 “调优硬盘子系统”</p>
+<h2 id="131-">1.3.1 虚拟文件系统</h2>
+<p>虚拟文件系统（VFS）是一个位于用户进程与各种Linux文件系统之间的抽象接口层，它提供用于访问文件系统对象的通用对象模型（如i-node、文件对象、页缓存、目录条目等等）和方法，它对用户进程隐藏了各种文件系统间的差异。用户进程不需要知道使用的是哪个文件系统或不同的文件系统需要呼叫哪个系统调用。图1-14阐明了VFS的概念。</p>
+<p>图1-14 VFS概念</p>
+<h2 id="132-">1.3.2 日志记录</h2>
+<p>在一个没有日志记录的文件系统中，当文件系统执行一个写操作时，首先内核会更改文件系统的元数据，然后才写入实际的用户数据。这样的操作对于保持数据完整性会产生很高的风险。当写操作正在更改文件系统元数据时系统突然崩溃，文件系统的一致性很可能遭到破坏。在下次重启时，fsck需要通过检查所有的元数据来修复一致性。但当系统的容量很大时，完成检查需要很长的时间才能完成。在此过程中系统是不可以使用的。</p>
+<p>一个有日志记录的文件系统是通过在数据写入实际文件系统前先将变更的数据写入日志区(Journal Area)来解决这个问题。日志区可以被放置于文件系统中也可被放置于文件系统之外。被写入日志区的数据被称作日志记录【Journal Log】。它包含文件系统元数据的变化和实际的文件数据（如果支持）。</p>
+<p>因为日志记录在写入实际用户数据到文件系统前需要写入journal log，相对于没有日志记录的文件系统这会导致性能上的开销。维护数据的高一致性会牺牲多少的性能开销，取决写入用户数据前有多少信息需要写入硬盘。我们将在1.3.4“Ext3”中讨论此课题。</p>
+<p>图1-15日志记录概念</p>
+<h2 id="133-ext2">1.3.3 Ext2</h2>
+<p>Ext2是Ext3文件系统的前身，一个快速、简单的文件系统。不像当今其它大多数文件系统一样，它并没有日志功能。</p>
+<p>图1-16向我们展示了Ext2文件系统的数据结构。文件系统以引导扇区开始，紧接着是块组(Block Group)。因i-node表和存储用户数据的数据块【Data Block】可以位于磁碟片相邻位置，这样就可以减少寻道的时间，为了性能的提升整个文件系统被分为多个小块组。一个块组是由下面几项组成：</p>
+<p>Super block ：存储文件系统信息。Super block必须位于每个块组的顶部。
+Block group descriptor：存储块组的相关信息。
+Data block bitmaps：用于管理未使用的数据块。
+i-node bitmaps：用户管理未使用的i-node。
+i-node tables：存储i-node表。每个文件都有一个相应的i-node表，用来保存文件的元数据如：文件模式、uid、gid、atime、ctime、mtime、dtime和数据块的指针。
+Data blocks：存储实际的用户数据。</p>
+<p>图1-16 Ext2文件系统数据结构</p>
+<p>为了要找到组成文件的数据块，内核首先查找文件的i-node。当一个进程请求打开/var/log/messages时，内核解析文件路径并查找/（根目录）的目录项，获得其下的文件及目录信息。下一步内核继续查找/var的i-node并查看/var的目录项，它也包含其下的文件及目录信息。内核继续使用同样的方法直到找到所要文件的i-node。Linux内核使用文件对象缓存如目录项缓存或i-node缓存，来加快查找相应i-node的速度。</p>
+<p>当Linux内核找到文件的i-node后，它将尝试访问实际的用户数据块。正像我们所讲述的，i-node保存有数据块的指针。通过指针内核可以获得数据块。对于大文件，Ext2提供了直接/间接的数据块参照。图1-17描绘了其是怎样运作的。</p>
+<p>图1-17 Ext2文件系统直接/间接的数据块参照</p>
+<p>不同的文件系统在文件系统结构和文件访问操作上存在着不同的差异，这让每个文件系统都各具特色。</p>
+<h2 id="134-ext3">1.3.4 Ext3</h2>
+<p>当前Linux企业发行版中都支持第三扩展文件系统。它作为第二扩展文件系统的升级版本被广泛使用。经管它有着与Ext2文件系统相似的基本结构，但与Ext2最大的不同之处就是其拥有日志记录功能。此文件系统亮点包括：</p>
+<ul>
+<li><p>可用性：Ext3始终保持写入硬盘数据的一致性。当发生非正常关机（以外的电源故障或系统崩溃）时，服务器不需要花费时间去检查数据的一致性，从而将系统恢复时间从几小时缩短至几秒钟。</p>
+</li>
+<li><p>数据完整性：在mount命令时通过指定日志记录模式data=journal，所有数据包括文件数据及元数据都会被记录日志。</p>
+</li>
+<li><p>速度：通过指定日志记录模式data=writeback，你可以根据业务需要来决定选择速度还是完整性。在一个同时发生写操作非常频繁的环境中这是非常重要的。</p>
+</li>
+<li><p>复杂度：将一个已存在的Ext2文件系统升级到Ext3文件系统是很简单的，不需要重新格式化。通过执行tune2fs命令并修改/etc/fstab文件，你就可以很容易将Ext2升级到Ext3文件系统。此外Ext3文件系统可以被挂载为Ext2，但日志记录功能此时是不可用的。有许多第三方的产品提供调整Ext3文件系统的功能，例如PartitionMagic可以修改Ext3的分区。</p>
+</li>
+</ul>
+<p>日志模式</p>
+<p>Ext3支持3种日志模式</p>
+<ul>
+<li>日志 此种模式提供了最高等级的数据一致性，文件数据和元数据都将被记录日志。它也会造成过多的性能开销。 </li>
+<li>顺序 在这种模式下只有元数据会被写入，然而在此之前首先保证文件数据已被写入。此模式为默认设定。 </li>
+<li>回写 此种模式是在牺牲数据一致性的情况下提供访问数据最快的速度。为保证数据的一致性，元数据任会被记录。然而实际的文件数据并不会被特殊处理，这就导致当系统崩溃后旧数据的出现。</li>
+</ul>
+<h2 id="135-reiserfs">1.3.5 ReiserFS</h2>
+<p>ReiserFS是一种快速的日志文件系统，它可以优化硬盘空间的使用和加快故障恢复的速度。ReiserFS的开发很大程度上得益于Novell的支助。只有在Novell SUSE Linux上使用ReiserFS才可以得到商业支持。</p>
+<h2 id="136-journal-file-system">1.3.6 Journal File System</h2>
+<p>JFS是一个全64为文件系统，能支持大文件和分区。JFS起初是IBM为AIX所开发的，但现在已近可以在GPL下使用。JFS对于高性能计算（HPC）和数据库环境中的大分区和文件是非常理想的文件系统。如果想了解更多，参见<a href="http://jfs.sourceforge.net" target="_blank">http://jfs.sourceforge.net</a>
+注释：在Novel SUSE Linux Enterprise Server 10中，JFS不在被支持。</p>
+<h2 id="137-xfs">1.3.7 XFS</h2>
+<p>eXtended File System（XFS）起初是Silicon Graphics公司为其IRIX系列系统开发的高性能日志文件系统。其功能特性与来自IBM的JFS非常相似，也支持大文件和分区，因此使用情境与JFS也十分相似。</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../chap1/Linux内存结构.html" class="navigation navigation-prev " aria-label="Previous page: Linux内存结构"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../chap1/io子系统.html" class="navigation navigation-next " aria-label="Next page: 硬盘I/O子系统"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

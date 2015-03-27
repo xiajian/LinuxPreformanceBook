@@ -1,0 +1,819 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <title>硬盘瓶颈 | </title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.5.0">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+        
+    
+    
+    <link rel="next" href="../chap3/网络瓶颈.html" />
+    
+    
+    <link rel="prev" href="../chap3/内存瓶颈.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../gitbook/style.css">
+
+
+        
+    <div class="book" data-level="4.4" data-basepath=".." data-revision="1424917814231">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="preface.html">
+            
+                
+                    <a href="../preface.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         前言
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="chap1/README.html">
+            
+                
+                    <a href="../chap1/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         了解Linux操作系统
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="2.1" data-path="chap1/Linux进程管理.html">
+            
+                
+                    <a href="../chap1/Linux进程管理.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                         Linux进程管理
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.2" data-path="chap1/Linux内存结构.html">
+            
+                
+                    <a href="../chap1/Linux内存结构.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                         Linux内存结构
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.3" data-path="chap1/Linux文件系统.html">
+            
+                
+                    <a href="../chap1/Linux文件系统.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                         Linux文件系统
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.4" data-path="chap1/io子系统.html">
+            
+                
+                    <a href="../chap1/io子系统.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                         硬盘I/O子系统
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.5" data-path="chap1/网络子系统.html">
+            
+                
+                    <a href="../chap1/网络子系统.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                         网络子系统
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.6" data-path="chap1/性能指标.html">
+            
+                
+                    <a href="../chap1/性能指标.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                         了解Linux性能指标
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="chap2/README.html">
+            
+                
+                    <a href="../chap2/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         监控和测量工具
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="3.1" data-path="chap2/介绍.html">
+            
+                
+                    <a href="../chap2/介绍.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                         介绍
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.2" data-path="chap2/工具功能简介.html">
+            
+                
+                    <a href="../chap2/工具功能简介.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                         工具功能简介
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.3" data-path="chap2/监控工具.html">
+            
+                
+                    <a href="../chap2/监控工具.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                         监控工具
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.4" data-path="chap2/基准工具.html">
+            
+                
+                    <a href="../chap2/基准工具.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                         基准工具
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" data-path="chap3/README.html">
+            
+                
+                    <a href="../chap3/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         分析性能瓶颈
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="4.1" data-path="chap3/确认瓶颈.html">
+            
+                
+                    <a href="../chap3/确认瓶颈.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                         确认瓶颈
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.2" data-path="chap3/CPU瓶颈.html">
+            
+                
+                    <a href="../chap3/CPU瓶颈.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                         CPU瓶颈
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.3" data-path="chap3/内存瓶颈.html">
+            
+                
+                    <a href="../chap3/内存瓶颈.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                         内存瓶颈
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="4.4" data-path="chap3/硬盘瓶颈.html">
+            
+                
+                    <a href="../chap3/硬盘瓶颈.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                         硬盘瓶颈
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.5" data-path="chap3/网络瓶颈.html">
+            
+                
+                    <a href="../chap3/网络瓶颈.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                         网络瓶颈
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" data-path="chap4/README.html">
+            
+                
+                    <a href="../chap4/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         操作系统调优
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="5.1" data-path="chap4/调优原则.html">
+            
+                
+                    <a href="../chap4/调优原则.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                         调优原则
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.2" data-path="chap4/安装注意事项.html">
+            
+                
+                    <a href="../chap4/安装注意事项.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                         安装注意事项
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.3" data-path="chap4/更改内核参数.html">
+            
+                
+                    <a href="../chap4/更改内核参数.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                         更改内核参数
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.4" data-path="chap4/处理器子系统调优.html">
+            
+                
+                    <a href="../chap4/处理器子系统调优.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                         处理器子系统调优
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.5" data-path="chap4/虚拟内存子系统调优.html">
+            
+                
+                    <a href="../chap4/虚拟内存子系统调优.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                         虚拟内存子系统调优
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.6" data-path="chap4/硬盘子系统调优.html">
+            
+                
+                    <a href="../chap4/硬盘子系统调优.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                         硬盘子系统调优
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.7" data-path="chap4/网络子系统调优.html">
+            
+                
+                    <a href="../chap4/网络子系统调优.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                         网络子系统调优
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" ></a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_39">
+                    
+                        <h1 id="34-disk-bottlenecks-">3.4 Disk bottlenecks 磁盘瓶颈</h1>
+<p>The disk subsystem is often the most important aspect of server performance and is usually the most common bottleneck. 
+However, problems can be hidden by other factors, such as lack of memory. 
+Applications are considered to be I/O-bound when CPU cycles are wasted simply waiting for I/O tasks to finish.</p>
+<p>磁盘子系统是服务器性能最重要的方面，通常它也是最常见的瓶颈；
+然而，它的问题通常隐藏在其它因素之下，如缺少内存；
+当CPU周期都浪费在等待I/O任务完成时，这样的应用程序被认为是I/O密集型；</p>
+<p>The most common disk bottleneck is having too few disks. 
+Most disk configurations are based on capacity requirements, not performance. 
+The least expensive solution is to purchase the smallest number of the largest capacity disks possible. 
+However, this places more user data on each disk, 
+causing greater I/O rates to the physical disk and allowing disk bottlenecks to occur.</p>
+<p>最常见的磁盘瓶颈是硬盘太小；
+大多数的磁盘配置是基于容量需求，而不是性能；
+最便宜的解决方案可能是少量的大容量磁盘；</p>
+<p>The second most common problem is having too many logical disks on the same array. 
+This increases seek time and significantly lowers performance.
+The disk subsystem is discussed in 4.6, “Tuning the disk subsystem” on page 112.</p>
+<p>第二个常见的问题是在同一个陈列中有过多的逻辑磁盘， 
+这会增加寻道时间而显著降低性能；</p>
+<h2 id="341-finding-disk-bottlenecks">3.4.1 寻找磁盘瓶颈(Finding disk bottlenecks)</h2>
+<p>A server exhibiting the following symptoms might be suffering from a disk bottleneck (or a hidden memory problem):
+如果服务器出现了下列现象就有可能是遇到了磁盘瓶颈(或隐含的内存问题):</p>
+<ul>
+<li>Slow disks will result in 缓慢的磁盘会导致:
+– Memory buffers filling with write data (or waiting for read data), which will delay all
+  requests because free memory buffers are unavailable for write requests (or the
+  response is waiting for read data in the disk queue).
+  内存buffer将会被写数据填充(或等待读数据)，这会导致所有的响应变慢，
+  因为对于写请求来说，没有可用的空间内存buffer(或这个响应在等待从磁盘队列中读数据)。</li>
+</ul>
+<p> – Insufficient memory, as in the case of not enough memory buffers for network requests,
+    will cause synchronous disk I/O.
+    内存不足，在没有足够的内存缓冲用于网络请求的情况下，将导致磁盘I/O 同步；</p>
+<ul>
+<li>Disk utilization, controller utilization, or both will typically be very high.
+磁盘利用率，控制器利用率，或者这两者都很有可能；</li>
+</ul>
+<ul>
+<li>Most LAN transfers will happen only after disk I/O has completed, causing very long
+response times and low network utilization.
+大多数的的LAN传输都会在磁盘I/O完成后会发生，会造成非常长的响应时间和很低的网络选用率；</li>
+</ul>
+<ul>
+<li>Disk I/O can take a relatively long time and disk queues will become full, so the CPUs will
+be idle or have low utilization because they wait long periods of time before processing the
+next request.
+磁盘I/O会消耗很长的时间并导致磁盘队列变满，因此CPU将会变得很闲或很低的利用率，
+因为它们在处理下个响应之前，要等待很长的时间；</li>
+</ul>
+<p>The disk subsystem is perhaps the most challenging subsystem to properly configure.
+Besides looking at raw disk interface speed and disk capacity, it is also important to understand the workload. 
+Is disk access random or sequential? Is there large I/O or small I/O? 
+Answering these questions provides the necessary information to make sure the disk subsystem is adequately tuned.</p>
+<p>磁盘子系统可能是实现合适配置的最有挑战的子系统；
+除了要关注原始磁盘接口速度和硬盘容量外，工作负载也同样重要；
+磁盘访问是随机的还是序列的？是重I/O，还是轻I/O的？
+只有回答了这些问题后才能提供必要的信息来调整磁盘子系统；</p>
+<p>Disk manufacturers tend to showcase the upper limits of their drive technology’s throughput.
+However, taking the time to understand the throughput of your workload will help you
+understand what true expectations to have of your underlying disk subsystem.</p>
+<p>磁盘制造商倾向于炫耀他们驱动技术的吞吐量的上限，
+然而，理解你工作负载的吞吐量将有助于理解你对磁盘子系统的真正期望；</p>
+<p>Random read/write workloads usually require several disks to scale. 
+The bus bandwidths of SCSI or Fibre Channel are of lesser concern. 
+Larger databases with random access workload will benefit from having more disks. 
+Larger SMP servers will scale better with more disks. 
+Given the I/O profile of 70% reads and 30% writes of the average commercial workload, 
+a RAID-10 implementation will perform 50% to 60% better than a RAID-5. </p>
+<p>随机读/写工作负载通常请求多个磁盘扩展；
+SCSI的bus的带宽或Fibre通常不怎么关注；
+随机访问方式的大数据库在多个磁盘情况下很有好处；
+大型SMP服务器在扩展上要好于多磁盘；
+假如平均工作负载 是70%的读和30%的写，则RAID-10要比RAID-5效率高50%~60%；</p>
+<p>Sequential workloads tend to stress the bus bandwidth of disk subsystems. 
+Pay special attention to the number of SCSI buses and Fibre Channel controllers when maximum throughput is desired. 
+Given the same number of drives in an array, RAID-10, RAID-0, 
+and RAID-5 all have similar streaming read and write throughput. </p>
+<p>序列工作负载对bus带宽和磁盘子系统有很大的压力；
+假如在陈列中有相同数量的磁盘，RAID-10, RAID-0, RAID-5有相同的流读写吞吐量；</p>
+<p>There are two ways to approach disk bottleneck analysis: 
+real-time monitoring and tracing.
+有两种方法来对磁盘瓶颈进行分析:
+实时监测和跟踪；</p>
+<ul>
+<li><p>Real-time monitoring must be done while the problem is occurring. This might not be
+practical in cases where system workload is dynamic and the problem is not repeatable.
+However, if the problem is repeatable, this method is flexible because of the ability to add
+objects and counters as the problem becomes clear.
+实时监测必须在问题出现时做，这在系统负载是动态的且问题不能重现时很难操作，
+然而，如果问题可以重现，这个方法就很有用了；</p>
+</li>
+<li><p>Tracing is the collecting of performance data over time to diagnose a problem. This is a
+good way to perform remote performance analysis. Some of the drawbacks include the
+potential for having to analyze large files when performance problems are not repeatable,
+and the potential for not having all key objects and parameters in the trace and having to
+wait for the next time the problem occurs for the additional data.
+跟踪是通过长时间收集性能数据来诊断问题，对于远程性能分析来说，这是一个很好的方法；
+但这个方法也有一些缺点，分析大文件时，性能问题不可重复；
+未对重要对象和参数进行跟踪等；</p>
+</li>
+</ul>
+<p>vmstat command
+One way to track disk usage on a Linux system is by using the vmstat tool. The important
+columns in vmstat with respect to I/O are the bi and bo fields. These fields monitor the
+movement of blocks in and out of the disk subsystem. Having a baseline is key to being able
+to identify any changes over time.
+Linux系统的硬盘跟踪工具可以使用vmstat,
+它是最重要的列是bi和bo, 它们监测了有磁盘子系统的块的输入和输出的移动， 
+有一个基准线来标识改变很重要；</p>
+<p>iostat command
+Performance problems can be encountered when too many files are opened, read and written
+to, then closed repeatedly. This could become apparent as seek times (the time it takes to
+move to the exact track where the data is stored) start to increase. Using the iostat tool, you
+can monitor the I/O device loading in real time. Different options enable you to drill down even
+deeper to gather the necessary data.
+iostats可以用于监测实时的I/O设备负载，不同的选项可做进一步的分析；</p>
+<p>Example 3-3 shows a potential I/O bottleneck on the device /dev/sdb1. This output shows
+average wait times (await) of about 2.7 seconds and service times (svctm) of 270 ms.</p>
+<p>For a more detailed explanation of the fields, see the man page for iostat(1).
+Changes made to the elevator algorithm as described in 4.6.2, “I/O elevator tuning and
+selection” on page 115 will be seen in avgrq-sz (average size of request) and avgqu-sz
+(average queue length). As the latencies are lowered by manipulating the elevator settings,
+avgrq-sz will decrease. You can also monitor the rrqm/s and wrqm/s to see the effect on the
+number of merged reads and writes that the disk can manage.
+更多的细节可见iostat的man页面；</p>
+<h2 id="342-performance-tuning-options">3.4.2 性能调整选项(Performance tuning options)</h2>
+<p>After verifying that the disk subsystem is a system bottleneck, several solutions are possible.
+当确认磁盘子系统是系统瓶颈时，有多个解决办法可用；</p>
+<p>These solutions include the following:</p>
+<ul>
+<li>If the workload is of a sequential nature and it is stressing the controller bandwidth, the
+solution is to add a faster disk controller. However, if the workload is more random in
+nature, then the bottleneck is likely to involve the disk drives, and adding more drives will
+improve performance.
+如果工作负载是序列式的且控制器的带宽压力很大时，解决办法是添加更快速的磁盘控制器；
+如果工作负载是随机式的时，瓶颈可能是硬盘驱动，增加驱动可以改善性能；</li>
+</ul>
+<ul>
+<li>Add more disk drives in a RAID environment. This spreads the data across multiple
+physical disks and improves performance for both reads and writes. This will increase the
+number of I/Os per second. Also, use hardware RAID instead of the software
+implementation provided by Linux. If hardware RAID is being used, the RAID level is
+hidden from the OS.
+在RAID环境中添加更多的磁盘驱动，这能使数据跨越多个物理磁盘并改善读写性能；
+同样，使用硬件RAID替代软件RAID也有效果；</li>
+</ul>
+<ul>
+<li>Consider using Linux logical volumes with striping instead of large single disks or logical
+volumes without striping.
+考虑使用Linux条带方式的逻辑卷；</li>
+</ul>
+<ul>
+<li>Offload processing to another system in the network (users, applications, or services).
+卸载进程到网络的另一个系统；</li>
+</ul>
+<ul>
+<li>Add more RAM. Adding memory increases system memory disk cache, which in effect
+improves disk response times.
+增加更多的RAM，添加内存增加了系统的内存磁盘cache, 可以改善磁盘的响应时间；</li>
+</ul>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../chap3/内存瓶颈.html" class="navigation navigation-prev " aria-label="Previous page: 内存瓶颈"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../chap3/网络瓶颈.html" class="navigation navigation-next " aria-label="Next page: 网络瓶颈"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
